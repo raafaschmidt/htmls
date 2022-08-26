@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs básicos</title>
+</head>
+<body>
+    <h1>Inputs básicos</h1>
+
+    <form action="https://www.globo.com" method="post">
+
+        <label>Nome</label><br>
+        <input placeholder="Insira seu nome" type="text" name="nome" class="" id="" /> <br>
+
+        <label>Senha</label><br>
+        <input placeholder="Insira sua senha" type="password" name="senha" /><br><br>
+
+        <label>Time</label><br>
+        <input type="text" placeholder="Insira seu time" name="time" list="lista_times">
+        <datalist id="lista_times">
+            <option value="Santos"></option>
+            <option value="Palmeiras"></option>
+            <option value="Gremio"></option>
+        </datalist>
+
+
+
+        <label>Opções</label>
+        <input type="radio" name="opcao" id="">A
+        <input type="radio" name="opcao" id="">B
+        <input type="radio" name="opcao" id="">C <br><br>
+
+        <label>Múltipla escolha</label>
+        <input type="checkbox" name="multiplo" id="">1
+        <input type="checkbox" name="multiplo" id="">2
+        <input type="checkbox" name="multiplo" id="">3
+        <br><br>
+
+        <label>Texto</label> <br>
+        <textarea name="texto" id="" cols="150" rows="10"></textarea>
+        <br>
+
+        <label>Arquivo</label><br>
+        <input type="file" name="arquivo" id="">
+        <br><br>
+
+
+        <label>Sexo</label>
+        <select name="sexo" id="">
+            <option selected value="Selecione">Selecione</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+        </select>
+
+        <br><br><br>
+        <input type="button" value="Botão sem ação"> <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
